@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import ChatBotWidget from "@/components/chat/ChatBotWidget";
 
 export const metadata: Metadata = {
   title: "الواحة التعليمية",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           disableTransitionOnChange={false}
         >
           {children}
+          <ChatBotWidget />
         </ThemeProvider>
       </body>
     </html>

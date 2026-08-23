@@ -5,7 +5,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.extension import Limiter
 from slowapi.util import get_remote_address
 from config import settings
-from routers import auth, courses, progress, stats, deadlines, questions, upload, admin, categories
+from routers import auth, courses, progress, stats, deadlines, questions, upload, admin, categories, chat
 
 limiter = Limiter(key_func=get_remote_address)
 
